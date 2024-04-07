@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+        <title>
+            Let's Play
+        </title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="head">
+                Rock-Paper-Scissors
+            </div>
+            <div class="game">
+                <div onclick="playGame('rock')">
+                    &#9994;
+                </div>
+                <div onclick="playGame('paper')">
+                    &#128400;
+                </div>
+                <div onclick="playGame('scissors')" style="margin-right: 0;">
+                    &#9996;
+                </div>
+            </div>
+            <p class="js-result"></p>
+            <p class="js-moves"></p>
+            <div class="js-score"></div>
+            <button class="res" onclick="
+                score.wins=0;
+                score.losses=0;
+                score.ties=0;
+                updateScoreElement();
+                scoreReset();
+            ">
+                Reset Score
+            </button>
+        </div>
+        <script src="script.js">
+        </script>
+    </body>
+</html>
